@@ -2,25 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Enjoy a collection of delicious meals that will make you come back for more!">
     <meta name="author" content="Hailey Draper">
     <title>GOOD EATS - Street Tacos</title>
-    <!-- Link to external stylesheet -->
-    <link rel="stylesheet" href="styles.css">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Header Section -->
+    <!-- Header -->
     <header>
         <h1>Street Tacos</h1>
         <p>Street tacos are packed with flavor, made with tender steak, zesty lime, and topped with cilantro. Perfect for a quick meal!</p>
-        <!-- Navigation for Save, Share, Print buttons -->
+        
         <nav id="quick">
             <ul>
                 <li>
                     <button aria-label="Save">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-download" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"/>
                             <polyline points="7 11 12 16 17 11"/>
@@ -31,7 +31,7 @@
                 </li>
                 <li>
                     <button aria-label="Share">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-share" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <circle cx="6" cy="12" r="3"/>
                             <circle cx="18" cy="6" r="3"/>
@@ -44,7 +44,7 @@
                 </li>
                 <li>
                     <button aria-label="Print">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-printer" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M17 17h2a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-14a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h2"/>
                             <path d="M17 9v-4a2 2 0 0 0 -2 -2h-6a2 2 0 0 0 -2 2v4"/>
@@ -53,18 +53,22 @@
                         Print
                     </button>
                 </li>
+                <li>
+                    <a href="#details">Jump to Details</a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <!-- Main Content -->
     <main>
-        <!-- Article Section with Tacos Details -->
+        <!-- Article Section -->
         <article>
             <section id="intro">
                 <img src="images/street-tacos.png" alt="Steak tacos on corn tortillas with cilantro and lime.">
-                <div id="intro-text">
-                    <p>Street tacos are packed with flavor, made with tender steak, zesty lime, and topped with cilantro. Perfect for a quick meal!</p>
+                <div id="intro-txt">
+                    <p>Street tacos are delicious and easy to make, filled with tender steak, lime, and topped with your favorite ingredients!</p>
+                    <p>Try these other taco recipes: taco-stuffed avocados, Baja fish tacos, and ground beef tacos!</p>
                 </div>
             </section>
 
@@ -72,58 +76,92 @@
             <section id="details">
                 <h2>Details</h2>
                 <dl>
-                    <dt>Prep Time</dt><dd>10 minutes</dd>
-                    <dt>Cook Time</dt><dd>10 minutes</dd>
-                    <dt>Total Time</dt><dd>20 minutes</dd>
-                    <dt>Author</dt><dd>Taco Cheesington</dd>
-                    <dt>Servings</dt><dd>6 Tacos</dd>
+                    <dt>Prep Time</dt>
+                    <dd>10 minutes</dd>
+                    <dt>Cook Time</dt>
+                    <dd>10 minutes</dd>
+                    <dt>Total Time</dt>
+                    <dd>20 minutes</dd>
+                    <dt>Author</dt>
+                    <dd>Taco Cheesington</dd>
+                    <dt>Servings</dt>
+                    <dd>6 Tacos</dd>
                 </dl>
             </section>
 
-            <!-- Ingredients Section -->
-            <section id="ingredients">
-                <h2>Ingredients</h2>
-                <ul>
-                    <li>Flank steak</li>
-                    <li>Soy sauce</li>
-                    <li>Worcestershire sauce</li>
-                    <li>Lime</li>
-                    <li>Minced garlic</li>
-                    <li>Cilantro</li>
-                    <li>Chili powder</li>
-                    <li>Cumin</li>
-                    <li>Salt</li>
-                    <li>Pepper</li>
-                    <li>Corn tortillas</li>
-                </ul>
+            <!-- Ingredients and Directions -->
+            <section id="wrap">
+                <section id="ingredients">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>Flank steak</li>
+                        <li>Soy Sauce</li>
+                        <li>Worcestershire sauce</li>
+                        <li>Lime</li>
+                        <li>Minced garlic</li>
+                        <li>Cilantro</li>
+                        <li>Chili powder</li>
+                        <li>Cumin</li>
+                        <li>Salt</li>
+                        <li>Pepper</li>
+                        <li>Corn tortillas</li>
+                    </ul>
+                </section>
+
+                <section id="directions">
+                    <h2>Directions</h2>
+                    <ol>
+                        <li>Cut and mix flank steak with soy sauce, Worcestershire, lime, cilantro, chili powder, cumin, salt, and pepper.</li>
+                        <li>Marinate steak for 1-2 hours.</li>
+                        <li>Cook steak in a skillet for 5-7 minutes or until no longer pink.</li>
+                        <li>Add steak to tortillas with desired toppings.</li>
+                    </ol>
+                </section>
             </section>
 
-            <!-- Directions Section -->
-            <section id="directions">
-                <h2>Directions</h2>
-                <ol>
-                    <li>Mix soy sauce, Worcestershire, lime, garlic, and spices with the steak.</li>
-                    <li>Marinate the steak for 1-2 hours.</li>
-                    <li>Cook the steak in a skillet over medium-high heat until cooked through.</li>
-                    <li>Serve on tortillas and add toppings of choice.</li>
-                </ol>
-            </section>
+            <!-- Aside for Side Dishes -->
+            <aside id="side-dishes">
+                <h2>Need some side dishes?</h2>
+                <section id="dishes">
+                    <div class="sd">
+                        <h3>Mexican Rice</h3>
+                        <img src="images/mexican-rice.png" alt="Bowl of rice with cilantro, tomatoes, and lime">
+                        <p>Traditional recipe with a twist.</p>
+                        <div class="rating">
+                            <span>Rating:</span>
+                            <!-- Star SVG icons (you can reuse existing SVGs for stars) -->
+                        </div>
+                    </div>
+                    <div class="sd">
+                        <h3>Salsa</h3>
+                        <img src="images/salsa.png" alt="Salsa with taquitos and tortilla chips">
+                        <p>Just the right amount of spice.</p>
+                        <div class="rating">
+                            <span>Rating:</span>
+                            <!-- Star SVG icons -->
+                        </div>
+                    </div>
+                </section>
+            </aside>
         </article>
     </main>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
         <section id="socials">
+            <h2>Connect</h2>
             <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">YouTube</a></li>
-                <li><a href="#">TikTok</a></li>
+                <li><a href="#" target="_blank" aria-label="Facebook">Facebook</a></li>
+                <li><a href="#" target="_blank" aria-label="Instagram">Instagram</a></li>
+                <li><a href="#" target="_blank" aria-label="YouTube">YouTube</a></li>
+                <li><a href="#" target="_blank" aria-label="Tik Tok">Tik Tok</a></li>
             </ul>
         </section>
-        <section id="copyright">
-            <p>&copy; 2024 Taco Cheesington. All rights reserved.</p>
+        <section id="outro">
+            <p>&copy; 2022 Taco Cheesington. All rights reserved.</p>
+            <img src="Images/taco-cheesington.png" alt="Tattooed hands garnishing a dish of meat and veggies">
         </section>
     </footer>
+
 </body>
 </html>
