@@ -2,33 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SVG Icons</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVGs</title>
+    <style>
+        /* CSS for styling spacing instead of using <br> */
+        .spacer {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Save Icon -->
-    <svg id="save-icon" xmlns="http://www.w3.org/2000/svg" class="icon" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-        <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"/>
-        <polyline points="7 11 12 16 17 11"/>
-        <line x1="12" y1="4" x2="12" y2="16"/>
-    </svg>
+    <!-- Header Section with Taco Title and Description -->
+    <header>
+        <h1>Delicious Taco</h1>
+        <p>The best taco you've ever tasted, packed with flavor and fresh ingredients!</p>
+    </header>
 
-    <!-- Share Icon -->
-    <svg id="share-icon" xmlns="http://www.w3.org/2000/svg" class="icon" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-        <circle cx="6" cy="12" r="3"/>
-        <circle cx="18" cy="6" r="3"/>
-        <circle cx="18" cy="18" r="3"/>
-        <line x1="8.7" y1="10.7" x2="15.3" y2="7.3"/>
-        <line x1="8.7" y1="13.3" x2="15.3" y2="16.7"/>
-    </svg>
+    <!-- Navigation Menu with Save, Share, etc. -->
+    <nav>
+        <ul>
+            <li><button aria-label="Save"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-download" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
+                <polyline points="7 11 12 16 17 11" />
+                <line x1="12" y1="4" x2="12" y2="16" />
+              </svg> Save</button></li>
+            <li><button aria-label="Share"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-share" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="6" cy="12" r="3" />
+                <circle cx="18" cy="6" r="3" />
+                <circle cx="18" cy="18" r="3" />
+                <line x1="8.7" y1="10.7" x2="15.3" y2="7.3" />
+                <line x1="8.7" y1="13.3" x2="15.3" y2="16.7" />
+              </svg> Share</button></li>
+            <!-- Additional menu items can be added here -->
+        </ul>
+    </nav>
 
-    <!-- Print Icon -->
-    <svg id="print-icon" xmlns="http://www.w3.org/2000/svg" class="icon" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-        <path d="M17 17h2a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-14a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h2"/>
-        <path d="M17 9v-4a2 2 0 0 0 -2 -2h-6a2 2 0 0 0 -2 2v4"/>
-        <rect x="7" y="13" width="10" height="8" rx="2"/>
-    </svg>
+    <!-- Ratings Section with proper semantic structure -->
+    <section>
+        <h2>Ratings</h2>
+        <section>
+            <dl>
+                <dt>Rating:</dt>
+                <dd>5 out of 5 stars</dd>
+            </dl>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="#ffffff" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+            </svg>
+        </section>
+    </section>
+
+    <!-- Side Dishes using <aside> for related content -->
+    <aside>
+        <section>
+            <h2>Side Dishes</h2>
+            <p>We offer a variety of side dishes to complement your taco, including chips, salsa, and guacamole.</p>
+        </section>
+    </aside>
+
+    <!-- Small for Copyright Information -->
+    <footer>
+        <small>&copy; 2024 Taco Delight. All rights reserved.</small>
+    </footer>
+
 </body>
 </html>

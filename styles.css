@@ -1,76 +1,209 @@
-/* General reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
 
-/* Body Styling */
-body {
+/* General Reset and Global Styles */
+* {
     font-family: 'Montserrat', sans-serif;
     color: #0D0D0D;
-    background-color: rgba(122, 191, 191, 0.5);
-    padding: 20px;
+    transition: all 0.5s ease;
 }
-
-/* Header */
-header {
-    text-align: center;
+html {
+    background-color: rgba(122, 191, 191, .5);
+}
+body {
+    min-width: 414px;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 0 25px 25px;
+    line-height: 1.5;
+}
+header, main {
     background-color: #F2F2F2;
-    padding: 20px;
+}
+header, footer {
+    width: 100%;
+}
+footer {
+    background-color: #fff;
 }
 
-/* Navigation for action buttons */
-#quick ul {
-    display: flex;
-    justify-content: center;
+/* Typography */
+h1, h2, h3, a, .btn {
+    font-family: 'Bebas Neue', sans-serif;   
+}
+h1, h2 {
+    text-align: center;
+}
+h1 {
+    font-size: 40px;
+    padding-top: 150px;
+    margin-bottom: 0;
+}
+h2 {
+    font-size: 30px;
+    margin: 10px;
+}
+h3 {
+    font-size: 25px;
+}
+p, dd, dt, li, nav, input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+dt {
+    font-weight: 700;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #ffffff;
+    box-shadow: rgba(33, 35, 38, 0.4) 0px 10px 10px -10px;
+    text-transform: uppercase;
+}
+nav ul {
+    text-align: center;
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
 }
-
-#quick ul li {
-    margin: 0 10px;
+nav ul li {
+    padding: 10px;
 }
-
-#quick button {
+nav ul li button {
     background: none;
     border: none;
     cursor: pointer;
 }
-
-#quick svg {
-    transition: transform 0.3s ease;
-}
-
-#quick svg:hover {
+nav ul li button:hover {
     transform: scale(1.1);
 }
-
-/* Main Content */
-main {
-    background-color: #F2F2F2;
-    padding: 20px;
-}
-
-/* Image Sizing */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Footer */
-footer {
-    background-color: #F2F2F2;
-    padding: 20px;
+nav ul li a {
+    font-size: 20px;
+    color: #EB5428;
+    text-decoration: none;
     text-align: center;
 }
 
-footer ul {
-    list-style: none;
+/* Section for Ratings */
+section {
+    margin: 20px 0;
+}
+.rating {
     display: flex;
+    align-items: center;
     justify-content: center;
-    padding: 0;
+}
+.rating svg {
+    padding-right: 5px;
+}
+dl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    max-width: 225px;
+}
+dt {
+    margin-right: 10px;
+}
+dd {
+    margin-left: 0;
 }
 
-footer ul li {
-    margin: 0 10px;
+/* Styles for Aside */
+aside {
+    background-color: #7ABFBF;
+    padding: 20px;
+    margin-top: 20px;
+}
+aside section {
+    margin: 10px 0;
+}
+aside h2 {
+    text-align: center;
+    font-size: 24px;
+}
+aside p {
+    text-align: center;
+}
+
+/* Footer and Small Element */
+footer {
+    display: grid;
+    justify-items: center;
+    padding: 20px 0;
+}
+footer small {
+    font-size: 12px;
+    color: #0D0D0D;
+}
+
+/* Buttons and Interactions */
+a:hover, button:hover {
+    background-color: #EB5428;
+    color: #F2F2F2;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #EB5428;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (min-width: 768px) {
+    body {
+        width: 90.1vw;
+    }
+    header {
+        height: 220px;
+    }
+    h1 {
+        text-align: left;
+        padding-left: 15px;
+        margin-top: 55px;
+    }
+    nav {
+        height: 190px;
+        max-width: 1280px;
+        width: 90.1vw;
+    }
+    nav ul {
+        justify-content: space-around;
+    }
+    nav ul li a {
+        letter-spacing: 0;
+    }
+    nav ul li button {
+        font-size: 18px;
+    }
+    nav ul li:hover {
+        background-color: transparent;
+    }
+    footer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Styles for Desktop */
+@media screen and (min-width: 1280px) {
+    body {
+        max-width: 1280px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    footer {
+        grid-template-columns: 1fr 1fr;
+    }
 }
